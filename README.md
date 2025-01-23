@@ -57,7 +57,7 @@ This project is a React-based application for selecting, managing, and dynamical
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-repo/skills-domain-selector.git
+   git clone https://github.com/BasavarajuVB/Domain-Skills-Hub
    cd my-app
    ```
 
