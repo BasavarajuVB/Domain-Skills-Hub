@@ -1,0 +1,84 @@
+.app-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #f5f5f5);
+  box-sizing: border-box;
+}
+
+.domain-section,
+.skills-section {
+  flex: 1;
+  max-width: 40%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.domain-section h2,
+.skills-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333333;
+}
+
+.domain-section p,
+.skills-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+@media (max-width: 1024px) {
+  .app-container {
+    gap: 20px;
+  }
+
+  .domain-section,
+  .skills-section {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .domain-section,
+  .skills-section {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .domain-section,
+  .skills-section {
+    padding: 16px;
+  }
+
+  .domain-section h2,
+  .skills-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .domain-section p,
+  .skills-section p {
+    font-size: 0.9rem;
+  }
+}

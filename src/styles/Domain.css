@@ -1,0 +1,124 @@
+.domain-container {
+    padding: 24px;
+    max-width: 480px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .domain-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .selected-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+    justify-content: center;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    padding: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .selected-options:hover {
+    border-color: #0056b3;
+    background-color: #d1e9fe;
+  }
+  
+  .selected-item {
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .selected-item:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .remove-button {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .remove-button:hover {
+    color: #cc0000;
+  }
+  
+  .domain-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .domain-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .domain-container {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .selected-options {
+      gap: 10px;
+    }
+  
+    .selected-item {
+      font-size: 13px;
+      padding: 8px 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .domain-container {
+      padding: 16px;
+      max-width: 100%;
+      margin: 10px auto;
+    }
+  
+    .selected-options {
+      gap: 8px;
+    }
+  
+    .selected-item {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    .remove-button {
+      font-size: 12px;
+    }
+  
+    .domain-select {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
